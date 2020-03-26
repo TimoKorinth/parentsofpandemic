@@ -34,4 +34,10 @@ ion-slides {
       z-index: 10;
     }
   }
+
+  .cards {
+    ion-card-content img {
+      height: 50px;
+    }
+  }
 }
