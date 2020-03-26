@@ -1,3 +1,37 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+ion-content {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-slides {
+  height: 100%;
+
+  img {
+    max-height: fit-content;
+  }
+}
+
+.header-slider {
+  height: 35%;
+}
+
+.content {
+  flex: auto;
+
+  .logo {
+    background: #85a8ac;
+    height: 80px;
+    text-align: center;
+
+    img {
+      height: 150px;
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
