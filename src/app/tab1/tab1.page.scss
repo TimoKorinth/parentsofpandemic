@@ -11,7 +11,7 @@ ion-slides {
   height: 100%;
 
   img {
-    max-height: fit-content;
+    max-height: max-content;
   }
 }
 
@@ -19,23 +19,52 @@ ion-slides {
   height: 35%;
 }
 
+.header-text {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  top: -150px;
+  padding-bottom: 80px;
+  padding-top: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0) 100%);
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
 .content {
   flex: auto;
+  z-index: 10;
+  background: white;
 
   .logo {
     background: #85a8ac;
     height: 80px;
     text-align: center;
-
+    
     img {
       height: 150px;
       margin-top: -60px;
       position: relative;
-      z-index: 10;
     }
   }
 
   .cards {
+    ion-card {
+      background: #85a8ac;
+      text-align: center;
+    }
+
     ion-card-content img {
       height: 50px;
     }
